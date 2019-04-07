@@ -14,7 +14,7 @@ class App < Sinatra::Base
     raise params.inpect
     @number = params[:number].to_i
     @phrase = params[:phrase]
-    @number.times do
+    @number.to_i.times do
       "#{@phrase}"
     end
   end
