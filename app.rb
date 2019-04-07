@@ -15,7 +15,7 @@ class App < Sinatra::Base
     @phrase = params[:phrase]
     @number.times do
       "#{@phrase.to_s}"
-    end.first
+    end.join
   end
 
 end
